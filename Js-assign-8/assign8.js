@@ -10,10 +10,10 @@ function showAll(){
     h1.innerText = "Todo List - All";
 
     const para = document.querySelectorAll("p");
-    for(let i=0;i< para.length;i++){
-        var ptag = para[i];
-        document.body.removeChild(ptag);
-    }
+    // for(let i=0;i< para.length;i++){
+    //     var ptag = para[i];
+    //     document.body.removeChild(ptag);
+    // }
     for(let i=0;i<array.length;i++){
         var obj = array[i];
         var p = document.createElement("p");

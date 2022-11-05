@@ -3,7 +3,7 @@ const arr = input.split(",");
 const n = prompt("Enter the value");
 
 function getEven (){
-    const evenArr = arr.filter((currElem,i)=>{
+    const evenArr = arr.filter((currElem)=>{
         return currElem%2==0;
     });
     console.log(evenArr);

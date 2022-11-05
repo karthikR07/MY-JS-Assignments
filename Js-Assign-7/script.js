@@ -16,10 +16,16 @@ function addItem(e){
     p.addEventListener("click", removeItem);
 
     count++;
+    let h3 = document.createElement("h3");
+    // h3.setAttribute("key",count)
+    h3.innerText = count;
 
     let div = document.getElementById("taskList");
 
     div.appendChild(p);
+    div.appendChild(h3);
+    h3.addEventListener("click", removeItem);
+
 }
 function removeItem(e){
     let div = document.getElementById("taskList");
